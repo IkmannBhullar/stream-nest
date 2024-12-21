@@ -1,0 +1,199 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #141414;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+/* toggle dark/light mode */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f40612;
+}
+
+
+/* Hero Section Styles */
+.hero-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+   
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+/* Featured Content Styles */
+.carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    position: relative;
+}
+
+.card {
+    flex: 0 0 250px; /* Fixed width for cards */
+    height: 350px; /* Fixed height for cards */
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card img {
+    width: 100%; /* Make images fit the card width */
+    height: 75%; /* Take up 75% of the card's height */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* carasoul left right arrow */
+.scroll-left,
+.scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+    background-color: rgba(229, 9, 20, 0.8); /* Netflix-like red hover effect */
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevent cards from extending outside the container */
+}
+
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d0d0d;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
